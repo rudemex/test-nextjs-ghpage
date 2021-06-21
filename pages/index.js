@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image';
-import vercelLogo from '../public/vercel.svg';
 import styles from '../styles/Home.module.css'
 
 const Home = () => {
@@ -53,14 +51,7 @@ const Home = () => {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image  src={vercelLogo} alt="Vercel Logo" className={styles.logo} />
-        </a>
+        Powered by mex
       </footer>
     </div>
   )
