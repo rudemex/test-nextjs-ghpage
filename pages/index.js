@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import Image from 'next/image';
+import vercelLogo from '../public/vercel.svg';
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -57,9 +59,11 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          <Image  src={vercelLogo} alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
   )
 }
+
+export default Home;
